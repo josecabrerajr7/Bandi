@@ -1,0 +1,62 @@
+<section>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-sm-12 text-center">
+				<h2 class="contact-head"><strong>{{ head }}</strong></h2>
+			</div>
+			<div class="col-sm-12">
+				<img ng-src="{{ image }}" class="img-responisve center-block">
+			</div>
+			<div class="col-sm-12 text-center">
+				<p class="contact-des">{{ des }}</p>
+			</div>
+		</div>
+	</div><!-- closing tag for row section -->
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="slider-team">
+				<li ng-repeat="team in teaminfo">
+					<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3">
+						<img ng-src="{{ team.image }}" alt="{{ team.alt }}" class="center-block" />
+						<div class="col-sm-12">
+							<h3 class="text-center">{{ team.name }}</h3>
+						</div>
+						<div class="col-sm-12">
+							<h5 class="text-center">{{ team.position }}</h5>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Some Fun Facts Section coding -->
+	<div class="sff-bg img-responsive">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="col-sm-12 text-center">
+					<h2 class="contact-head"><strong>{{ funhead }}</strong></h2>
+				</div>
+				<div class="col-sm-12">
+					<img ng-src="{{ whiteHeart }}" class="img-responisve center-block">
+				</div>
+			</div>
+		</div><!-- closing tag for row section -->
+		<div class="row fun-padding">
+			<div class="col-md-12">
+				<div class="col-xs-12 col-sm-3 col-md-3" ng-repeat="facts in facts">
+					<div class="col-sm-12">
+						<img ng-src="{{ facts.image }}" class="center-block" alt="{{ facts.alt }}" />
+					</div>
+					<div class="col-sm-12">
+						<h1 class="text-center fun-text">{{ facts.number }}</h1>
+					</div>
+					<div class="col-sm-12">
+						<h4 class="text-center fun-text">{{ facts.head }}</h4>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>

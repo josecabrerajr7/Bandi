@@ -1,0 +1,69 @@
+<section>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-sm-12 text-center">
+				<h2 class="contact-head"><strong>{{ head }}</strong></h2>
+			</div>
+			<div class="col-sm-12">
+				<img ng-src="{{ image }}" class="img-responisve center-block">
+			</div>
+			<div class="col-sm-12 text-center">
+				<p class="contact-des">{{ des }}</p>
+			</div>
+		</div>
+	</div><!-- closing row for top content -->
+
+	<div class="row map-bottom">
+		<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+			<div class="col-sm-12">
+				<h3 class="address-des">{{ dessecond }}</h3>
+			</div>
+			<div class="col-sm-12">
+				<address>
+					{{ street }}<br>
+					{{ state }}<br>
+					{{ phoneNumber }}<br>
+					{{ email }}<br>
+					{{ website }}
+				</address>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+			<div class="col-sm-12">
+				<h3><strong>{{ hello }}</strong></h3>
+			</div>
+			<div class="col-sm-12">
+				<form class="form-inline">
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    					<label class="sr-only" for="Email">Email</label>
+    					<input type="email" class="form-control" id="Email" placeholder="Email">	
+  					</div>
+  					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    					<label class="sr-only" for="Name">Name</label>
+    					<input type="text" class="form-control" id="Name" placeholder="Name">	
+  					</div>
+  					<div class="col-lg-12">
+  						<label class="sr-only" for="Message">Message</label>
+						<textarea class="form-control textarea" rows="1" placeholder="Message" id="Message"></textarea>
+  					</div>
+  					<div class="col-xs-12">
+  						<button type="submit" class="pull-right submit-btn">
+							<ul>
+								<li class="submit-img"></li>
+								<li>Send message</li>
+							</ul>
+						</button>
+  					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-1 col-md-2 col-lg-3">
+			<ul ng-repeat="socialIcon in socialIcon" class="social-icon-list">
+				<li><a href="{{ socialIcon.link }}"><img ng-src="{{ socialIcon.image }}" alt="{{ socialIcon.alt }}" /></li>
+			</ul>
+		</div>
+	</div>
+		<div class="row">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43538.34622962751!2d-120.55227400000001!3d46.99809360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5499f232b23a8e31%3A0xf8b0db614cc00917!2sEllensburg%2C+WA!5e0!3m2!1sen!2sus!4v1437713117563" width="100%" height="215px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+</section>

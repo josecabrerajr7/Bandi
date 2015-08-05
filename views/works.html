@@ -1,0 +1,32 @@
+<section>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="col-sm-12 text-center">
+				<h2 class="contact-head"><strong>{{ head }}</strong></h2>
+			</div>
+			<div class="col-sm-12">
+				<img ng-src="{{ image }}" class="img-responisve center-block">
+			</div>
+			<div class="col-sm-12 text-center">
+				<p class="contact-des">{{ des }}</p>
+			</div>
+		</div>
+	</div><!-- closing row for top content -->
+	<div class="row">
+		<div class="col-md-12" id="portfolio2">
+			<ul id="filter">
+				<li class="current"><a href="#">All</a></li>
+				<li><a href="#">Branding</a></li>
+				<li><a href="#">Web</a></li>
+				<li><a href="#">Logo Design</a></li>
+				<li><a href="#">Photography</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<ul id="portfolio">
+			<li ng-repeat="work in work" class="{{ work.style }}"><a href="#"><img ng-src="{{ work.image }}" alt="{{ work.alt }}" class="img-responsive"></a></li>
+		</ul>
+	</div>
+
+</section>

@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html ng-app="bandiApp">
+<head>
+	<title>Brandi -- Website</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/fonts.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+
+	
+
+	
+</head>
+<body>
+	<nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <ul>
+            	<li><a class="navbar-brand" href="#/">Brandi</a></li>
+            	<li>|</li>
+            	<li>I'am your tag line</li>
+            </ul>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>        
+ 	<!-- angular templating -->
+	<!-- this is where content will be injected -->
+	<div class="main">
+		<div ng-view></div>
+	</div>
+
+	<!-- Footer Coding -->
+	<div class="hello">
+	<footer>
+		<div class="col-md-12">
+			<!-- section 1 -->
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+				<div class="col-sm-12">
+					<p class="footer-logo">Brandi</p>
+				</div>
+				<div class="col-sm-12">
+					<p class="footer-description">eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</div>
+			<!-- section 2 -->
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="col-sm-12">
+					<h5 class="footer-subscribe-txt">Subscribe</h5>
+				</div>
+				<div class="col-sm-12">
+					<div class="form-group">
+    					<input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+  					</div>
+				</div>
+				<div class="col-sm-12">
+					<p class="footer-description">eusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<!-- section 3 -->
+			<div class="col-xs-12 col-sm-3 col-md-4 col-lg-3">
+				<div class="col-sm-12">
+					<p class="footer-exploreList-txt">Explore</p>
+				</div>
+				<div class="col-sm-12">
+					<div class="list-exp">
+						<ul class="exploreList">
+							<li><a href="#">Envato</a></li>
+							<li><a href="#">Themeforest</a></li>
+							<li><a href="#">Themecurve</a></li>
+							<li><a href="#">Microsoft</a></li>
+							<li><a href="#">Kreativeshowcase</a></li>
+							<li><a href="#">Google</a></li>
+							<li><a href="#">Freebiescurve</a></li>
+							<li><a href="#">Yahoo</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- section 4 -->
+			<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+				<p>Created with <img src="img/footer-heart.png" class="footer-heart" /> by themecurve,</p> <br /> exclusive for Kreativeshowcase<br />
+				&copy; 2014 Brandi. All Rights Reserves.</p>
+			</div>
+		</div>
+		
+	</footer>
+	</div>
+
+	<script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified AngularJs -->
+	<script type="text/javascript" src="scripts/angular.min.js"></script>
+	<!-- Latest compiled and minified AngularJs Route Min -->
+	<script type="text/javascript" src="scripts/angular.route.min.js"></script>
+	<!-- Latest compiled and minified AngularJs animate Min -->
+	<script src="scripts/angular-animate.min.js"></script>
+	
+	<!-- app.js -->
+	<script src="scripts/app.js"></script>
+	
+	<!-- AngularJs main nav routes -->
+	<script type="text/javascript" src="routes/routes.js"></script>
+	<!-- Controller link for homeController -->
+	<script type="text/javascript" src="controllers/mainController.js"></script>
+	<!-- Controller link for featuresController -->
+	<script type="text/javascript" src="controllers/featuresController.js"></script>
+	<!-- Controller link for worksController -->
+	<script type="text/javascript" src="controllers/worksController.js"></script>
+	<!-- Controller link for teamController -->
+	<script type="text/javascript" src="controllers/teamController.js"></script>
+	<!-- Controller link for contactController -->
+	<script type="text/javascript" src="controllers/contactController.js"></script>
+</body>
+</html>
